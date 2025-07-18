@@ -1,0 +1,14 @@
+Test case 1
+
+Inputs:
+  data2 = 1
+  data1 = 0
+
+Mismatched outputs:
+  out_wired:
+    Verilator=1
+    Iverilog=1
+    Iverilog_Yosys=1
+    Iverilog_SV2V=1
+    CXXRTL=1
+    CXXSLG=0
