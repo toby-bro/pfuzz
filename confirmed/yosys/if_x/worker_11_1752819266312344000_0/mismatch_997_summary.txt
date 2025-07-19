@@ -1,0 +1,24 @@
+Test case 997
+
+Inputs:
+  inj_in_value_1752819266797_854 = 0
+  inj_param_in_1752819266779_75 = 0
+  a = ad
+  clk = 0
+  inj_b_1752819266756_987 = 0
+  inj_g_ctrl_p_1752819266789_473 = 0
+  inj_mode_1752819266763_150 = 0
+  rst = 0
+  b = 6e
+  inj_case_expr_1752819266746_805 = 0
+  inj_data_in_pa_1752819266766_541 = 0
+  inj_in1_1752819266737_561 = 0
+
+Mismatched outputs:
+  inj_out2_z_1752819266783_763:
+    Verilator=00000000
+    Verilator_Yosys=00000000
+    Iverilog=10101101
+    CXXRTL=00000000
+    CXXRTL_SV2V=00000000
+    CXXSLG=00000000

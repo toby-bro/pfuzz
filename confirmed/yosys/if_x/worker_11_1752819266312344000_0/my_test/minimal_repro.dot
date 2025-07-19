@@ -1,0 +1,24 @@
+digraph "minimal_repro" {
+label="minimal_repro";
+rankdir="LR";
+remincross=true;
+n5 [ shape=diamond, label="q1", color="black", fontcolor="black"];
+n6 [ shape=diamond, label="condition", color="black", fontcolor="black"];
+n7 [ shape=octagon, label="out", color="black", fontcolor="black"];
+n8 [ shape=octagon, label="clk", color="black", fontcolor="black"];
+c11 [ shape=record, label="{{<p9> A}|$2\n$not|{<p10> Y}}",  ];
+p0 [shape=box, style=rounded, label="PROC $4\n<<EOT:6.11-6.20", ];
+p1 [shape=box, style=rounded, label="PROC $3\n<<EOT:14.5-20.8", ];
+p2 [shape=box, style=rounded, label="PROC $1\n<<EOT:8.5-10.8", ];
+x3 [shape=point, ];
+c11:p10:e -> x3:w [color="black", fontcolor="black", label=""];
+p0:e -> n5:w [color="black", fontcolor="black", label=""];
+p2:e -> n5:w [color="black", fontcolor="black", label=""];
+n5:e -> c11:p9:w [color="black", fontcolor="black", label=""];
+x3:e -> n6:w [color="black", fontcolor="black", label=""];
+n6:e -> p1:w [color="black", fontcolor="black", label=""];
+p1:e -> n7:w [color="black", fontcolor="black", label=""];
+n7:e -> p1:w [color="black", fontcolor="black", label=""];
+n8:e -> p1:w [color="black", fontcolor="black", label=""];
+n8:e -> p2:w [color="black", fontcolor="black", label=""];
+}
