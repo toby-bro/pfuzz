@@ -1,0 +1,19 @@
+Test case 802
+
+Optimisations:
+  Iverilog: 
+  Verilator: -fno-combine -O3
+  Xcelium: 
+
+Inputs:
+  data_i = 02cc8d80
+  id_i = 31
+  clk = 0
+  inj_data_in_1755300051244_81 = 0
+  rst = 0
+
+Mismatched outputs:
+  crc_o:
+    Verilator=0000000000000001
+    Iverilog=0000000000000000
+    Xcelium=0000000000000000
